@@ -18,10 +18,19 @@ let _state = {
 
 //Public
 export default class AnimalService {
+    //FIXME Need More Functions (Delete & Add / Save & Load)
+    addLegs(newLegs, legsIndex) {
+        _state.animals[legsIndex].legs.push(newLegs)
+    }
+    addAnimal(newAnimal) {
+        _state.animals.push(new Animal(newAnimal))
+    }
+
+
+    //Making sure its working
     constructor() {
         console.log('Service Checking in')
     }
-    //FIXME Need More Functions (Delete & Add / Save & Load)
 
 
 
